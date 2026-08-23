@@ -27,8 +27,5 @@ Kullanıcının tıkladığı kartın yumuşak bir animasyonla genişlediği, di
 
 ---
 
-## 🚀 Lokalde Çalıştırma
 
-1. Depoyu klonlayın:
-   ```bash
-   git clone [https://github.com/KULLANICI_ADI/REPO_ADI.git](https://github.com/KULLANICI_ADI/REPO_ADI.git)
+
