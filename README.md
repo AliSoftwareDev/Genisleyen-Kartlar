@@ -1,6 +1,6 @@
-# 🖼️ Expanding Cards (Genişleyen Kartlar)
+# Expanding Cards Layout
 
-Kullanıcının tıkladığı kartın yumuşak bir animasyonla genişlediği, diğer kartların ise daraldığı interaktif ve modern bir kullanıcı arayüzü (UI) bileşeni. 
+CSS geçişleri (transitions) ve JavaScript etkileşimleri kullanılarak geliştirilmiş, görsel odaklı interaktif **Genişleyen Kartlar (Expanding Cards)** bileşeni. Kartlardan birine tıklandığında ilgili kart yumuşak bir animasyonla genişlerken diğer kartlar daralarak odağı seçili içeriğe toplar.
 
 ---
 
@@ -10,22 +10,41 @@ Kullanıcının tıkladığı kartın yumuşak bir animasyonla genişlediği, di
 
 
 ---
+## 🚀 Özellikler
 
-## ⚡ Çalışma Mantığı ve Öne Çıkan Özellikler
+* **Dinamik Sınıf Yönetimi (`active` Class):** JavaScript event listener yapısı ile tıklanan karta dinamik olarak aktiflik sınıfı eklenir ve diğerlerinden kaldırılır.
+* **Akıcı CSS Animasyonları:** `flex` ve `transition` özellikleri kullanılarak kart genişlemeleri donma olmadan, donanım ivmelenmeli (hardware-accelerated) şekilde gerçekleşir.
+* **Tam Responsive Tasarım:** Mobil cihazlarda dikey (column), geniş ekranlarda yatay (row) esnek düzen (Flexbox) geçişi.
+* **Erişilebilirlik ve Performans:** Harici hiçbir kütüphane (jQuery, Bootstrap vb.) kullanılmadan, minimum JavaScript ve CSS yüküyle maksimum performans.
 
-- **Flexbox Mimarisi:** Kartların esnek bir şekilde genişleyip daralması CSS `flex` özelliği ve `transition` geçiş animasyonları ile sağlanmıştır.
-- **Dinamik Class Yönetimi:** Tıklanan karta `.active` sınıfı eklenirken, diğer kartlardan bu sınıf eşzamanlı olarak kaldırılır.
-- **Arayüz Odaklı Tasarım:** Tamamen responsive (duyarlı) ve kullanıcı etkileşimine anında yanıt veren minimalist bir yapı.
+---
+
+## 🛠️ Teknolojik Mimari
+
+* **HTML5:** Semantik yapı ve veri öznitelikleri (`data-attributes`).
+* **CSS3:** 
+  * `flex-grow` / `flex` oranları ile kart boyutlandırma
+  * `transition: all 0.7s ease-in-out` ile yumuşak geçişler
+  * Media Queries ile cihaz uyumluluğu
+* **Vanilla JavaScript (ES6+):** 
+  * `querySelectorAll` ile DOM elemanlarının tespiti
+  * `forEach` ve `addEventListener` ile olay yönetimi
 
 ---
 
-## 🛠️ Teknolojiler
+## 📂 Proje Dosya Yapısı
 
-- **HTML5:** Kart yapısı ve görsel kapsayıcılar.
-- **CSS3:** Flexbox layout, `transition` animasyonları, arka plan görsel yönetimi (`background-size: cover`).
-- **Vanilla JavaScript:** DOM seçicileri (`querySelectorAll`), `forEach` döngüsü ve `classList` API.
+```text
+expanding-cards/
+│
+├── assets/
+│   └── preview.png       # README ekran görüntüsü
+├── index.html            # İskelet yapı
+├── style.css             # Flexbox ve animasyon kuralları
+├── script.js            # Tıklama ve active sınıfı mantığı
+└── README.md             # Proje dokümantasyonu
 
----
+
 
 
 
